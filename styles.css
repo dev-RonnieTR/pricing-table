@@ -197,6 +197,10 @@ a {
         pointer-events: none;
     }
     .scroll-hint {
+        position: static;
+        width: unset;
+        height: unset;
+        overflow: visible;
         text-align: center;
         font-size: 0.9rem;
         color: #aaa;
