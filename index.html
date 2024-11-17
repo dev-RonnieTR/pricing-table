@@ -27,6 +27,7 @@
       </p>
     </header>
     <main>
+    <div class="scroll-hint">← Swipe to view more →</div>
       <div class="table" aria-hidden="true">
         <div class="feature column">
           <h2>Website number</h2>
@@ -142,7 +143,7 @@
       });
 
       function adjustPlansMargin() {
-        // Apply only for screens smaller than 768px
+        // Apply only for screens smaller than 900px
         if (window.matchMedia("(max-width: 900px)").matches) {
           const plansDiv = document.querySelector(".plans");
           const scrollbarHeight = plansDiv.offsetHeight - plansDiv.clientHeight;

@@ -106,6 +106,14 @@ main {
     background-color: #121826;
 }
 
+.scroll-hint {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    top: -1;
+}
+
 /*Typography*/
 h1 {
     color: #000000;
@@ -170,5 +178,34 @@ a {
     .plans {
         grid-template-columns: repeat(4, minmax(9rem, 13rem));
         overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 900px) and (hover: none) and (pointer: coarse) {
+    .plans {
+        position: relative;
+    }
+    
+    .plans::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 5rem;
+        background: linear-gradient(to left, white, transparent);
+        pointer-events: none;
+    }
+    .scroll-hint {
+        text-align: center;
+        font-size: 0.9rem;
+        color: #aaa;
+        margin-bottom: 10px;
+        animation: fadeInOut 3s infinite;
+    }
+    
+    @keyframes fadeInOut {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
     }
 }
