@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Be Vietnam Pro", serif;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
+
+.column {
+    display: grid;
+    grid-template-rows: 10rem repeat(8, 1fr);
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.plan :nth-child(1) {
+    grid-row: 1 / 2;
+}
+.feature :nth-child(1), .plan :nth-child(2) {
+    grid-row: 2 / 3;
+}
+.feature :nth-child(2), .plan :nth-child(3) {
+    grid-row: 3 / 4;
+}
+.feature :nth-child(3), .plan :nth-child(4) {
+    grid-row: 4 / 5;
+}
+.feature :nth-child(4), .plan :nth-child(5) {
+    grid-row: 5 / 6;
+}
+.feature :nth-child(5), .plan :nth-child(6) {
+    grid-row: 6 / 7;
+}
+.feature :nth-child(6), .plan :nth-child(7) {
+    grid-row: 7 / 8;
+}
+.feature :nth-child(7), .plan :nth-child(8) {
+    grid-row: 8 / 9;
+}
+.feature :nth-child(8), .plan :nth-child(9) {
+    grid-row: 9 / 10;
+}
