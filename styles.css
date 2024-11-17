@@ -6,6 +6,7 @@
 
 html {
     font-family: "Be Vietnam Pro", serif;
+    text-align: center;
 }
 
 
@@ -60,13 +61,42 @@ header {
     background-color: #F8FAFC;
     border-bottom: 1px solid #E5E7EB
 }
+main {
+    padding: 3rem 1rem;
+}
+.table {
+    max-width: 71.25rem;
+    min-height: 60vh;
+    margin: auto;
+}
+.feature > * {
+    background-color: #F8FAFC;
+}
+.column:not(.popular) > * {
+    border-bottom: 1px solid #E5E7EB;
+}
+.popular > * {
+    border-bottom: 1px solid #4D556233 ;
+}
+.heading {
+    border-bottom: none !important;
+}
+.column > * {
+    align-content: center;
+}
+.feature {
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+}
+.popular {
+    background-color: #121826;
+}
 
 /*Typography*/
 h1 {
     color: #000000;
     font-size: 2rem;
     font-weight: 700;
-    text-align: center;
     
     width: min(16rem, 100%);
     margin: 0 auto 1rem;
@@ -75,9 +105,33 @@ header > p {
     color: #4D5562;
     font-size: 1rem;
     font-weight: 400;
-    text-align: center;
 
     width: min(28rem, 100%);
     margin: auto;
 
+}
+h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+.category {
+    color: #263FA9;
+    font-weight: 700;
+}
+.price {
+    color: #000000;
+    font-size: 4rem;
+    font-weight: 600;
+}
+.popular, .popular .category, .popular .price {
+    color: #ffffff
+}
+.popular .category {
+    font-weight: 400;
+    background-color: #263FA9;
+    border-radius: 15px;
+    
+    width: min(100%, 5.5rem);
+    margin: auto;
+    padding: 0.15rem
 }
