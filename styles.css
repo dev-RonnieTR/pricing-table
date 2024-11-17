@@ -8,6 +8,8 @@ html {
     font-family: "Be Vietnam Pro", serif;
 }
 
+
+/*Grid Layout*/
 .table {
     display: grid;
     grid-template-columns: 15rem 1fr;
@@ -49,4 +51,33 @@ html {
 }
 .feature :nth-child(8), .plan :nth-child(9) {
     grid-row: 9 / 10;
+}
+
+/*Layout*/
+header {
+    padding: 3rem 1rem;
+    background-image: url(resources/bg-pattern.png);
+    background-color: #F8FAFC;
+    border-bottom: 1px solid #E5E7EB
+}
+
+/*Typography*/
+h1 {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    
+    width: min(16rem, 100%);
+    margin: 0 auto 1rem;
+}
+header > p {
+    color: #4D5562;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+
+    width: min(28rem, 100%);
+    margin: auto;
+
 }
