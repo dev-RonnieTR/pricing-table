@@ -146,6 +146,11 @@ h2 {
     font-size: 4rem;
     font-weight: 600;
 }
+.price::after {
+    content: "Per month";
+    font-size: 1rem;
+    display: block;
+}
 .popular, .popular .category, .popular .price, .popular a {
     color: #ffffff
 }
