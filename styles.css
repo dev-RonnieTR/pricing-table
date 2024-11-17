@@ -24,6 +24,7 @@ html {
 .plans {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
 }
 
 .plan :nth-child(1) {
