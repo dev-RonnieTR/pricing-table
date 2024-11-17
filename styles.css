@@ -13,7 +13,7 @@ html {
 /*Grid Layout*/
 .table {
     display: grid;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: 13rem 1fr;
 }
 
 .column {
@@ -23,8 +23,7 @@ html {
 
 .plans {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    overflow-x: auto;
+    grid-template-columns: repeat(4, minmax(9rem, 1fr));
 }
 
 .plan :nth-child(1) {
@@ -161,4 +160,15 @@ a {
 }
 .popular a {
     font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .table {
+        grid-template-columns: clamp(6.7rem, 23vw, 13rem) 1fr;
+    }
+    
+    .plans {
+        grid-template-columns: repeat(4, minmax(9rem, 13rem));
+        overflow-x: scroll;
+    }
 }
